@@ -7,6 +7,8 @@ body{
     animation: Gradient 15s ease infinite; */
     color: white;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
 }
 /* @keyframes Gradient {
     0%
