@@ -21,6 +21,18 @@ body{
         background-position: 0% 50%;
     }
 } */
+
+/* COlORS
+#05386B -bLUE shADE
+#379683 - BLUE Green Shade
+#5CDB95 - Green Shade
+#8EE4AF - Light Green Shade
+#EDF5E1 - Green yellow Shade
+
+*/
+
+
+/* header  */
 header{
     max-height: fit-content;
 }
@@ -71,3 +83,123 @@ header{
 .desktop-header-signup a:hover{
     text-decoration: underline;
 }
+
+.mobile-header{
+    display: none;
+}
+
+@media only screen and (max-width: 900px){
+    .desktop-header{
+        display: none;
+    }
+    .mobile-header{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .mobile-header-navbar{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-header-navbar-overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+      }
+      
+      .mobile-header-navbar-overlay-content {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        right: 15px;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .mobile-header-navbar-overlay-content a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 26px;
+        color: #fafafa;
+        display: block;
+        transition: 0.3s;
+      }
+      .mobile-header-navbar-overlay-content a:hover{
+        text-decoration: underline;
+      }
+      .mobile-header-navbar-overlay-content li{
+         list-style: none;
+      }
+      .closebtn a:hover{
+        color: white;
+    }
+      .mobile-header-navbar-overlay a:hover, .mobile-header-navbar-overlay a:focus {
+        color: rgb(57, 159, 255);
+        text-decoration: none;
+      }
+      
+      .mobile-header-navbar-overlay .closebtn {
+        position: absolute;
+        top: 5px;
+        right: 35px;
+        font-size: 40px;
+        color: white;
+        text-decoration: none;
+      }
+ 
+    
+      .hr-rounded{
+        height:2px;
+        border-width:0;
+        color:white;
+        background-color:white;
+        width: 75%;
+      }
+      .mobile-header-logo{
+          margin: auto;
+          align-items: center;
+          justify-content: center;
+      }
+      .mobile-header-signup{
+          margin: auto;
+          justify-content: center;
+          align-items: center;
+      }
+      .mobile-header-signup a{
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+      }
+      .mobile-header-signup a:hover{
+          text-decoration: underline;
+      }
+    
+}
+      
+@media screen and (max-height: 600px) {
+    .mobile-header-navbar-overlay {overflow-y: auto;}
+    .mobile-header-navbar-overlay a {font-size: 20px}
+    .mobile-header-navbar-overlay .closebtn {
+    font-size: 20px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+
+/* header End */
+
+/* Advertising Section */
+
+.advertising-section{
+
+}
+
+/* Advertising Section End */
