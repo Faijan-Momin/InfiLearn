@@ -91,6 +91,20 @@ header{
     display: none;
 }
 
+@media only screen and (max-width: 900px){
+    .desktop-header{
+        display: none;
+    }
+    .mobile-header{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .mobile-header-navbar{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
 /* Navicon Mobile */
 #nav-icon1 {
     width: 30px;
@@ -159,20 +173,6 @@ header{
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
     }
-
-@media only screen and (max-width: 900px){
-    .desktop-header{
-        display: none;
-    }
-    .mobile-header{
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-    .mobile-header-navbar{
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-    }
     .mobile-header-navbar-overlay {
         height: 0%;
         width: 100%;
@@ -234,6 +234,24 @@ header{
         background-color:white;
         width: 75%;
       }
+
+      .collapsible {
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+      }
+
       .mobile-header-logo{
           margin: auto;
           align-items: center;
@@ -252,6 +270,7 @@ header{
       .mobile-header-signup a:hover{
           text-decoration: underline;
       }
+
     
 }
       
