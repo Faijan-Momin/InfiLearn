@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #05386B;
     /* background: linear-gradient(-45deg, #05386B, #379683, #5CDB95, #8EE4AF,#EDF5E1); */
     /* background-size: 1200% 1200%;
     animation: Gradient 15s ease infinite; */
@@ -35,6 +34,7 @@ body{
 /* header  */
 header{
     max-height: fit-content;
+    background-color: #05386B;
 }
 .desktop-header{
     display: grid;
@@ -199,7 +199,7 @@ header{
 /* Advertising Section */
 
 .advertising-section{
-
+    background-color: #f1f1f1;
 }
 
 /* Advertising Section End */
