@@ -35,6 +35,7 @@ body{
 header{
     max-height: fit-content;
     background-color: #05386B;
+    box-shadow: #0054a8 0px 2px 12px -3px;
 }
 .desktop-header{
     display: grid;
