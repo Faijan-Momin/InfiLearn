@@ -2,12 +2,14 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #5CDB95;
-    background: linear-gradient(-45deg, #05386B, #379683, #5CDB95, #8EE4AF,#EDF5E1);
-    background-size: 1200% 1200%;
-    animation: Gradient 15s ease infinite;
+    background-color: #05386B;
+    /* background: linear-gradient(-45deg, #05386B, #379683, #5CDB95, #8EE4AF,#EDF5E1); */
+    /* background-size: 1200% 1200%;
+    animation: Gradient 15s ease infinite; */
+    color: white;
+    margin: 0;
 }
-@keyframes Gradient {
+/* @keyframes Gradient {
     0%
     {
         background-position: 0% 50%;
@@ -18,4 +20,54 @@ body{
     100%{
         background-position: 0% 50%;
     }
+} */
+header{
+    max-height: fit-content;
+}
+.desktop-header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+}
+.desktop-header-logo{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.desktop-header-navbar{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.desktop-header-navbar-ul{
+    list-style: none;
+    margin: auto;
+    padding: 0px;
+}
+.desktop-header-navbar-ul li{
+    display: flex;
+    float: left;
+    margin: auto;
+    padding: 30px;
+}
+.desktop-header-navbar-ul a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.desktop-header-navbar-ul a:hover{
+    text-decoration: underline;
+}
+.desktop-header-signup{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.desktop-header-signup a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.desktop-header-signup a:hover{
+    text-decoration: underline;
 }
