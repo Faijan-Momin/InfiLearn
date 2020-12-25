@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="images/Infilearn_logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -39,14 +40,25 @@
                     <div class="mobile-header-navbar-overlay-content">
                         <ul class="mobile-header-navbar-ul">
                             <li><a href="#">Classes</a></li> <hr class="hr-rounded">
-                            <li><a class="collapsible" href="#">Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a></li> <hr class="hr-rounded">
-                                <div class="content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                            <li ><a href="#" class="collapsible">More <i class="fa fa-angle-down" aria-hidden="true"></i></a></li> <hr class="hr-rounded">
-                                <div class="content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
+                            <li><a href="#study-material" data-toggle="collapse">Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                                <div id="study-material" class="collapse">
+                                    <ul class="navbar-study-material-ul">
+                                        <li><a href="">1</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">2</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">3</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">4</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">5</a></li>  <hr class="hr-rounded-collapsible">
+                                    </ul>
+                                </div> <hr class="hr-rounded">
+                            <li><a href="#more" data-toggle="collapse">More <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                            <div id="more" class="collapse">
+                                <ul class="navbar-more-ul">
+                                    <li><a href="">About Us</a></li>  <hr class="hr-rounded-collapsible">
+                                    <li><a href="">Blog</a></li>  <hr class="hr-rounded-collapsible">
+                                    <li><a href="">FAQ's</a></li>  <hr class="hr-rounded-collapsible">
+                                    <li><a href="">Contact Us</a></li>  <hr class="hr-rounded-collapsible">
+                                </ul>
+                            </div> <hr class="hr-rounded">
                         </ul>
                     </div>
                 </div>
@@ -64,6 +76,7 @@
     </section>
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
             $('#nav-icon1').click(function(){
