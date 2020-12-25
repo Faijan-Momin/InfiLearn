@@ -28,20 +28,25 @@
         </div>
         <div class="mobile-header">
             <div class="mobile-header-navbar">
-                <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <!-- <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+                <div id="nav-icon1" onclick="MobileNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div id="mobile-header-navbar" class="mobile-header-navbar-overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
                     <div class="mobile-header-navbar-overlay-content">
                         <ul class="mobile-header-navbar-ul">
                             <li><a href="#">Classes</a></li> <hr class="hr-rounded">
-                            <li><a href="#">Study Material</a></li> <hr class="hr-rounded">
-                            <li><a href="">More</a></li> <hr class="hr-rounded">
+                            <li><a href="#">Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a></li> <hr class="hr-rounded">
+                            <li><a href="">More <i class="fa fa-angle-down" aria-hidden="true"></i></a></li> <hr class="hr-rounded">
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="mobile-header-logo">
-                <img src="images/Infilearn_logo.png" alt="InfiLearn-logo" width="120" height="50">
+                <img src="images/Infilearn_logo.png" alt="InfiLearn-logo" width="130" height="50">
             </div>
             <div class="mobile-header-signup">
                 <a href=""><i class="fa fa-user-circle" aria-hidden="true"></i> Sign in</a>
@@ -52,5 +57,13 @@
 
     </section>
     <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav-icon1').click(function(){
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
 </body>
 </html>
