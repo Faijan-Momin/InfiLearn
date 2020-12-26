@@ -1,29 +1,6 @@
 *{
     box-sizing: border-box;
 }
-body{
-    /* background: linear-gradient(90deg, #05386B, #379683, #5CDB95, #8EE4AF,#EDF5E1);
-    background-size: 1200% 1200%;
-    animation: Gradient 15s ease infinite; */
-    color: white;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12pt;
-    background-color: #05386B;
-}
-/* @keyframes Gradient {
-    0%
-    {
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
-} */
-
 /* COlORS
 #05386B -bLUE shADE
 #379683 - BLUE Green Shade
@@ -32,6 +9,13 @@ body{
 #EDF5E1 - Green yellow Shade
 
 */
+body{
+    color: white;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    background-color: #05386B;
+}
 
 
 /* header  */
@@ -372,6 +356,23 @@ header{
 }
 
 
+@media only screen and (max-width: 900px){
+    .advertising-section-signup-box{
+        display: none;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 100%;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+/* Advertising Section End */
+
+
 
 .wave{
     position: relative;
@@ -383,7 +384,3 @@ header{
     background-color: #05386B;
     height: 50%;
 }
-
-
-
-/* Advertising Section End */
