@@ -359,12 +359,6 @@ header{
 @media only screen and (max-width: 900px){
     .advertising-section-signup-box{
         display: none;
-        background-position: center;
-        background-repeat: repeat;
-        background-size: 100%;
-        vertical-align: middle;
-        align-items: center;
-        justify-content: center;
     }
 }
 
