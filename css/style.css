@@ -5,7 +5,7 @@ body{
     /* background: linear-gradient(90deg, #05386B, #379683, #5CDB95, #8EE4AF,#EDF5E1);
     background-size: 1200% 1200%;
     animation: Gradient 15s ease infinite; */
-    color: white;
+    color: #05386B;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
@@ -37,7 +37,7 @@ body{
 /* header  */
 header{
     max-height: fit-content;
-    background-color: #000000;
+    background-color: #05386B;
     box-shadow: #666 0px 2px 12px -3px;
 }
 .desktop-header{
@@ -300,7 +300,7 @@ header{
 
 .advertising-section{
     width: 100%;
-    height: 75%;
+    height: 90%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -308,6 +308,70 @@ header{
 .advertising-section-background{
     width: 100%;
 }
+.advertising-section-signup-box{
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    display: block;
+    float: left;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    background-color: white;
+    box-shadow: #666 0px 2px 12px -6px;
+    border-radius: 7px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+.sign-up-box-header{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 15px;
+}
+.signup-box-user-inputs{
+    margin-top: 15%;    
+}
+.signup-box-user-inputs label{
+    font-weight: 100;
+    color: #666; 
+    margin-left: 2%;   
+}
+.signup-box-user-inputs input{
+    margin-left: 2%;
+    height: 40px;
+    width: 95%;
+}
+.signup-box-user-inputs input:focus{
+    box-shadow: red 0px 2px 12px -6px;
+    outline: red;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+.signup-box-user-submit{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+.signup-box-user-signup-button{
+    width: 50%;
+    height: 40px;
+    color: white;
+    background-color: red;
+    border-radius: 12px;
+    border: none;
+   outline: none;
+    cursor: pointer;
+}
+.signup-box-user-signup-button:hover{
+    box-shadow: red 0px 2px 12px -6px;
+    opacity: 0.8;
+}
+
+
+
 .wave{
     position: relative;
     top: -30%;
