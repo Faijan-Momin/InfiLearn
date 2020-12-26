@@ -5,11 +5,11 @@ body{
     /* background: linear-gradient(90deg, #05386B, #379683, #5CDB95, #8EE4AF,#EDF5E1);
     background-size: 1200% 1200%;
     animation: Gradient 15s ease infinite; */
-    color: #05386B;
+    color: white;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
-
+    background-color: #05386B;
 }
 /* @keyframes Gradient {
     0%
@@ -304,6 +304,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 .advertising-section-background{
     width: 100%;
@@ -374,8 +375,15 @@ header{
 
 .wave{
     position: relative;
-    top: -25%;
+    top: -20%;
 }
+.demo{
+    margin: 0px;
+    padding: 0px;
+    background-color: #05386B;
+    height: 50%;
+}
+
 
 
 /* Advertising Section End */
