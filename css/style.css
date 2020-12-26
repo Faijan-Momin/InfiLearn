@@ -23,11 +23,18 @@ header{
     max-height: fit-content;
     background-color: #05386B;
     box-shadow: #666 0px 2px 12px -3px;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .desktop-header{
     display: grid;
     grid-template-columns: auto auto auto;
     margin: auto;
+    
 }
 .desktop-header-logo{
     margin: auto;
@@ -288,6 +295,8 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: visible;
+    margin-top: 5%;
     
 }
 .advertising-section-background{
@@ -299,14 +308,14 @@ header{
     margin: auto;
     display: block;
     float: left;
-    position: absolute;
-    right: 10%;
-    top: 15%;
+    margin-left: 65%;
+    margin-top: 40px;
     background-color: white;
     box-shadow: #666 0px 2px 12px -6px;
     border-radius: 7px;
     color: black;
     font-family: 'Open Sans', sans-serif;
+    overflow: visible;
 }
 .sign-up-box-header{
     text-align: center;
@@ -319,7 +328,8 @@ header{
 .signup-box-user-inputs label{
     font-weight: 100;
     color: #666; 
-    margin-left: 2%;   
+    margin-left: 2%; 
+    font-size: 10pt;  
 }
 .signup-box-user-inputs input{
     margin-left: 2%;
@@ -351,8 +361,8 @@ header{
     cursor: pointer;
 }
 .signup-box-user-signup-button:hover{
-    box-shadow: #0053a7 0px 2px 12px -6px;
-    opacity: 0.8;
+    box-shadow: #0080ff 0px 4px 8px -3px;
+    opacity: 0.95;
 }
 
 
@@ -369,8 +379,11 @@ header{
 
 
 .wave{
-    position: relative;
-    top: -20%;
+    margin-top: -15%;
+}
+.wave svg{
+    width: 100%;
+    margin-top: -1%;
 }
 .demo{
     margin: 0px;
