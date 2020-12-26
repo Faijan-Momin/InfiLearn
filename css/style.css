@@ -2,13 +2,14 @@
     box-sizing: border-box;
 }
 body{
-    /* background: linear-gradient(-45deg, #05386B, #379683, #5CDB95, #8EE4AF,#EDF5E1); */
+    /* background: linear-gradient(180deg, #05386B, #379683, #5CDB95, #8EE4AF,#EDF5E1); */
     /* background-size: 1200% 1200%;
     animation: Gradient 15s ease infinite; */
     color: white;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
+
 }
 /* @keyframes Gradient {
     0%
@@ -295,7 +296,19 @@ header{
 /* Advertising Section */
 
 .advertising-section{
-    background-color: #f1f1f1;
+    width: 100%;
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.advertising-section-background{
+    width: 100%;
+}
+.wave{
+    position: relative;
+    top: -30%;
+}
+
 
 /* Advertising Section End */
