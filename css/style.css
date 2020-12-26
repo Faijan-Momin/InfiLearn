@@ -342,9 +342,9 @@ header{
     width: 95%;
 }
 .signup-box-user-inputs input:focus{
-    box-shadow: red 0px 2px 12px -6px;
-    outline: red;
-    border: 2px solid red;
+    box-shadow: rgb(255, 230, 0) 0px 2px 12px -6px;
+    outline: rgb(255, 230, 0);
+    border: 2px solid rgb(255, 230, 0);
     border-radius: 4px;
 }
 
@@ -359,14 +359,14 @@ header{
     width: 50%;
     height: 40px;
     color: white;
-    background-color: rgb(255, 230, 0);
+    background-color:#05386B;
     border-radius: 12px;
     border: none;
     outline: none;
     cursor: pointer;
 }
 .signup-box-user-signup-button:hover{
-    box-shadow: red 0px 2px 12px -6px;
+    box-shadow: #0053a7 0px 2px 12px -6px;
     opacity: 0.8;
 }
 
@@ -374,7 +374,7 @@ header{
 
 .wave{
     position: relative;
-    top: -30%;
+    top: -25%;
 }
 
 
