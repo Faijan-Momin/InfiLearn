@@ -25,7 +25,7 @@ header{
     box-shadow: #666 0px 2px 12px -3px;
     top: 0px;
     left: 0px;
-    overflow: hidden;
+    overflow: visible;
     position: fixed;
     top: 0;
     width: 100%;
@@ -66,6 +66,35 @@ header{
     text-decoration: underline;
     color: white;
 }
+.desktop-navbar-dropdown{
+    position: relative;
+    display: inline-block;
+}
+.desktop-navbar-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 8px 10px;
+    z-index: 1;
+    color: black;
+    border-radius: 7px;
+  }
+
+  .desktop-navbar-dropdown-content a{
+      color: black;
+      padding: 5px;
+  }
+  .desktop-navbar-dropdown-content a:hover{
+    color: black;
+    text-decoration: underline;
+}
+  .desktop-navbar-dropdown:hover .desktop-navbar-dropdown-content{
+      display: block;
+  }
+
+
 .desktop-header-signup{
     margin: auto;
     align-items: center;

@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/Infilearn_logo_web.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 </head>
 <body>
     <header>
@@ -19,8 +20,29 @@
             <div class="desktop-header-navbar">
                 <ul class="desktop-header-navbar-ul">
                     <li><a href="">Classes</a></li>
-                    <li><a href="">Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-                    <li><a href="">More <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                    <li>
+                        <div class="desktop-navbar-dropdown">
+                            <a>Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="desktop-navbar-dropdown-content">
+                            <br><a href="">1<sup>st</sup> Grade</a> <br> <br>
+                                <a href="">2<sup>nd</sup> Grade</a> <br> <br>
+                                <a href="">3<sup>rd</sup> Grade</a> <br> <br>
+                                <a href="">4<sup>th</sup> Grade</a> <br> <br>
+                                <a href="">5<sup>th</sup> Grade</a> <br> <br>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="desktop-navbar-dropdown">
+                            <a>More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="desktop-navbar-dropdown-content">
+                            <br><a href="">About Us</a> <br> <br>
+                                <a href="">Blog</a> <br> <br>
+                                <a href="">FAQ's</a> <br> <br>
+                                <a href="">Contact Us</a> <br> <br>
+                            </div>
+                          </div>
+                    </li>
                 </ul>
             </div>
             <div class="desktop-header-signup">
@@ -43,11 +65,11 @@
                             <li><a href="#study-material" data-toggle="collapse">Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
                                 <div id="study-material" class="collapse">
                                     <ul class="navbar-study-material-ul">
-                                        <li><a href="">1</a></li>  <hr class="hr-rounded-collapsible">
-                                        <li><a href="">2</a></li>  <hr class="hr-rounded-collapsible">
-                                        <li><a href="">3</a></li>  <hr class="hr-rounded-collapsible">
-                                        <li><a href="">4</a></li>  <hr class="hr-rounded-collapsible">
-                                        <li><a href="">5</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">1<sup>st</sup> Grade</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">2<sup>nd</sup> Grade</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">3<sup>rd</sup> Grade</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">4<sup>th</sup> Grade</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">5<sup>th</sup> Grade</a></li>  <hr class="hr-rounded-collapsible">
                                     </ul>
                                 </div> <hr class="hr-rounded">
                             <li><a href="#more" data-toggle="collapse">More <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
@@ -102,6 +124,8 @@
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
     <script>
         $(document).ready(function(){
             $('#nav-icon1').click(function(){
