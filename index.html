@@ -45,7 +45,7 @@
                 </ul>
             </div>
             <div class="desktop-header-signup">
-                <a href=""><i class="fa fa-user-circle" aria-hidden="true"></i> Sign in</a>
+                <a id="signin-modal-btn"><i class="fa fa-user-circle" aria-hidden="true"></i> Sign in</a>
             </div>
         </div>
         <div class="mobile-header">
@@ -91,6 +91,74 @@
                 <a href=""><i class="fa fa-user-circle" aria-hidden="true"></i> Sign in</a>
             </div>
         </div>
+    
+        <div class="signin-modal">
+            
+            <!-- The Modal -->
+            <div id="signin-modal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Sign in here</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="signin-modal-user-inputs">
+                        <label for="user-email">Enter Email:</label> <br>
+                            <input type="email" name="user-email" id="user-email" placeholder="johnmark@example.com"><br>
+                        <label for="user-password">Enter Password:</label> <br>
+                            <input type="password" name="user-password" id="user-password"><br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="signin-modal-user-submit">
+                        <button class="signup-modal-user-signup-button">Sign up</button>
+                    </div>
+                    <br><p>New User? <a id="signup-modal-btn">Sign-up Now</a></p>
+                </div>
+                </div>
+            
+            </div>
+
+
+            <!-- Signup Modal -->
+
+            <!-- The Modal -->
+            <div id="signup-modal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Sign up here</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="signin-modal-user-inputs">
+                        <label for="user-name">Enter Name:</label> <br>
+                            <input type="text" name="user-name" id="user-name" placeholder="eg: John Mark"><br>
+                        <label for="user-email">Enter Email:</label> <br>
+                            <input type="email" name="user-email" id="user-email" placeholder="johnmark@example.com"><br>
+                        <label for="user-password">Enter Password:</label> <br>
+                            <input type="password" name="user-password" id="user-password"><br>
+                        <label for="user-confirm-password">Confirm Password:</label> <br>
+                            <input type="password" name="user-confirm-password" id="user-confirm-password"><br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="signin-modal-user-submit">
+                        <button class="signup-modal-user-signup-button">Sign up</button>
+                    </div>
+                    <br><p>Existing User? <a id="signin-modal-btn-modal">Sign-in Now</a></p>
+                </div>
+                </div>
+            
+            </div>
+
+            
+        </div>
+
+
     </header>
     <section class="advertising-section" style="background-image: url('images/background.png');">
         <div class="advertising-section-background">
