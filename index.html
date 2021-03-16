@@ -9,6 +9,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/Infilearn_logo_web.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,7 +20,18 @@
             </div>
             <div class="desktop-header-navbar">
                 <ul class="desktop-header-navbar-ul">
-                    <li><a href="">Classes</a></li>
+                    <li>
+                        <div class="desktop-navbar-dropdown">
+                            <a>Classes <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="desktop-navbar-dropdown-content">
+                            <br><a href="">1<sup>st</sup> Class</a> <br> <br>
+                                <a href="">2<sup>nd</sup> Class</a> <br> <br>
+                                <a href="">3<sup>rd</sup> Class</a> <br> <br>
+                                <a href="">4<sup>th</sup> Class</a> <br> <br>
+                                <a href="">5<sup>th</sup> Class</a> <br> <br>
+                            </div>
+                          </div>
+                    </li>
                     <li>
                         <div class="desktop-navbar-dropdown">
                             <a>Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -36,11 +49,11 @@
                             <a>More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                             <div class="desktop-navbar-dropdown-content">
                             <br><a href="">About Us</a> <br> <br>
-                                <a href="">Blog</a> <br> <br>
+                                <a href="">Services</a> <br> <br>
                                 <a href="">FAQ's</a> <br> <br>
                                 <a href="">Contact Us</a> <br> <br>
                             </div>
-                          </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -60,7 +73,16 @@
                     <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
                     <div class="mobile-header-navbar-overlay-content">
                         <ul class="mobile-header-navbar-ul">
-                            <li><a href="#">Classes</a></li> <hr class="hr-rounded">
+                            <li><a href="#class" data-toggle="collapse">Class <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                                <div id="class" class="collapse">
+                                    <ul class="navbar-study-material-ul">
+                                        <li><a href="">1<sup>st</sup> Class</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">2<sup>nd</sup> Class</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">3<sup>rd</sup> Class</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">4<sup>th</sup> Class</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">5<sup>th</sup> Class</a></li>  <hr class="hr-rounded-collapsible">
+                                    </ul>
+                                </div> <hr class="hr-rounded">
                             <li><a href="#study-material" data-toggle="collapse">Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
                                 <div id="study-material" class="collapse">
                                     <ul class="navbar-study-material-ul">
@@ -75,7 +97,7 @@
                             <div id="more" class="collapse">
                                 <ul class="navbar-more-ul">
                                     <li><a href="">About Us</a></li>  <hr class="hr-rounded-collapsible">
-                                    <li><a href="">Blog</a></li>  <hr class="hr-rounded-collapsible">
+                                    <li><a href="">Services</a></li>  <hr class="hr-rounded-collapsible">
                                     <li><a href="">FAQ's</a></li>  <hr class="hr-rounded-collapsible">
                                     <li><a href="">Contact Us</a></li>  <hr class="hr-rounded-collapsible">
                                 </ul>
@@ -182,12 +204,146 @@
             </div>
         </div>
     </section>
-    <section class="wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#05386B" fill-opacity="1" d="M0,32L120,53.3C240,75,480,117,720,117.3C960,117,1200,75,1320,53.3L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> 
-        <div class="demo">
-
+    <section class="class-enrollment-section">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#00d4d1;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#16288a;stop-opacity:1" />
+              </linearGradient>
+        </defs>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" ><path fill="#00d4d1" fill-opacity="1" d="M0,32L120,53.3C240,75,480,117,720,117.3C960,117,1200,75,1320,53.3L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z" ></path></svg> 
+        
+        <div class="class-enrollment-boxes-background">
+            <div class="class-enrollment-boxes">
+                <div class="class-enrollment-title">
+                    <p>Enroll Now For Free</p>
+                </div>
+                <div class="class-enrollment-classes">
+                    <div class="class-enrollment-class">
+                        <div class="class-enrollment-class-image">
+                            <img src="https://source.unsplash.com/900x300/?students" alt="class-enrollment-image" width="90%" height="45%">
+                        </div>
+                        <div class="class-enrollment-class-title">
+                            <p>Live group classes for hobbies and activities</p>
+                        </div>
+                        <div class="class-enrollment-class-name">
+                            <p>Grade 1</p>
+                        </div>
+                        <div class="class-enrollment-class-explore-link">
+                            <a href="">Explore &RightArrow;</a>
+                        </div>
+                    </div>
+                    <div class="class-enrollment-class">
+                        <div class="class-enrollment-class-image">
+                            <img src="https://source.unsplash.com/900x300/?students" alt="class-enrollment-image" width="90%" height="45%">
+                        </div>
+                        <div class="class-enrollment-class-title">
+                            <p>Live group classes for hobbies and activities</p>
+                        </div>
+                        <div class="class-enrollment-class-name">
+                            <p>Grade 2</p>
+                        </div>
+                        <div class="class-enrollment-class-explore-link">
+                            <a href="">Explore &RightArrow;</a>
+                        </div>
+                    </div>
+                    <div class="class-enrollment-class">
+                        <div class="class-enrollment-class-image">
+                            <img src="https://source.unsplash.com/900x300/?students" alt="class-enrollment-image" width="90%" height="45%">
+                        </div>
+                        <div class="class-enrollment-class-title">
+                            <p>Live group classes for hobbies and activities</p>
+                        </div>
+                        <div class="class-enrollment-class-name">
+                            <p>Grade 3</p>
+                        </div>
+                        <div class="class-enrollment-class-explore-link">
+                            <a href="">Explore &RightArrow;</a>
+                        </div>
+                    </div>
+                    <div class="class-enrollment-class">
+                        <div class="class-enrollment-class-image">
+                            <img src="https://source.unsplash.com/900x300/?students" alt="class-enrollment-image" width="90%" height="45%">
+                        </div>
+                        <div class="class-enrollment-class-title">
+                            <p>Live group classes for hobbies and activities</p>
+                        </div>
+                        <div class="class-enrollment-class-name">
+                            <p>Grade 4</p>
+                        </div>
+                        <div class="class-enrollment-class-explore-link">
+                            <a href="">Explore &RightArrow;</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Landscape Class 5  -->
+                <div class="class-enrollment-class" style="padding: 2%;padding-top: 5%;margin-bottom: 0px;">
+                    <div class="class-enrollment-class-image">
+                        <img src="https://source.unsplash.com/900x300/?students" alt="class-enrollment-image" width="80%" height="65%">
+                    </div>
+                    <div class="class-enrollment-class-title">
+                        <p>Live group classes for hobbies and activities</p>
+                    </div>
+                    <div class="class-enrollment-class-name">
+                        <p>Grade 5</p>
+                    </div>
+                    <div class="class-enrollment-class-explore-link">
+                        <a href="">Explore &RightArrow;</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Advertising Section -->
+
+    <section class="register-class-section">
+        <div class="register-class-div">
+            <div class="register-class-box">
+                <div class="register-class-left-side">
+                    <div class="register-class-box-title">
+                        <p>Live group classes <br> for hobbies and activities</p>
+                    </div>
+                    <div class="register-class-box-info">
+                        <p>Have any questions? An experienced Toppr Agent will be able to answer any questions you have and discuss academic goals as well as the unique needs of the learner.</p>
+                    </div>
+                    <div class="register-class-box-enroll">
+                        <button class="register-class-box-enroll-btn">Enroll Now &rightarrow;</button>
+                    </div>
+                </div>
+                <div class="register-class-right-side">
+                    <img src="https://static-cf.toppr.com/marketing/0142d10/images/home/boy-with-tablet.png" alt="class-enrollment-image" width="100%" height="400px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+        
+            <div class="row">
+                INFI-LEARN Copyright © 2021 Infi-Learn - All rights reserved 
+            </div>
+        </div>
+    </footer>
+        
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

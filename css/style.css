@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 /* COlORS
-#05386B -bLUE shADE
+#1A2980 -bLUE shADE
 #379683 - BLUE Green Shade
 #5CDB95 - Green Shade
 #8EE4AF - Light Green Shade
@@ -12,16 +12,20 @@
 body{
     color: white;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 12pt;
-    background-color: #05386B;
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(-50deg, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-50deg, #26D0CE, #1A2980);
 }
 
 
 /* header  */
 header{
     max-height: fit-content;
-    background-color: #05386B;
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(-50deg, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-50deg, #26D0CE, #1A2980);
     box-shadow: #666 0px 2px 12px -3px;
     top: 0px;
     left: 0px;
@@ -29,6 +33,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 99999;
 }
 .desktop-header{
     display: grid;
@@ -109,6 +114,66 @@ header{
     text-decoration: underline;
     color: white;
 }
+
+/* Footer */
+.footer{
+  background: #1A2980;  /* fallback for old browsers */
+background: -webkit-linear-gradient(-50deg, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(-50deg, #26D0CE, #1A2980);
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:rgb(255, 255, 255);
+  font-size:1em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:rgb(255, 255, 255);
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+
+/* Fotter End */
+
 
 /* Signin Modal */
 
@@ -508,7 +573,7 @@ header{
     width: 50%;
     height: 40px;
     color: white;
-    background-color:#05386B;
+    background-color:#1A2980;
     border-radius: 12px;
     border: none;
     outline: none;
@@ -532,16 +597,403 @@ header{
 
 
 
-.wave{
+/* class enrollment section */
+
+.class-enrollment-section{
     margin-top: -15%;
 }
-.wave svg{
+.class-enrollment-section svg{
     width: 100%;
     margin-top: -1%;
 }
-.demo{
-    margin: 0px;
-    padding: 0px;
-    background-color: #05386B;
-    height: 50%;
+.class-enrollment-boxes-background{
+  background: #1A2980;  /* fallback for old browsers */
+background: -webkit-linear-gradient(-50deg, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(-50deg, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.class-enrollment-boxes{
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 25%;
+}
+.class-enrollment-title{
+  text-align: center;
+}
+.class-enrollment-title p{
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #ffec42;
+  background-image: linear-gradient(75deg, #fffac8, #FFE600);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.class-enrollment-classes{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+
+}
+.class-enrollment-class{
+    padding: 2%;
+    padding-top: 15%;
+    margin: auto; 
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: 430px;
+    width: 90%;
+    background-color: white;
+    border-radius: 7px;
+    color: #000;
+    box-shadow: #666 0px 2px 12px -6px;
+    text-align: center;
+}
+.class-enrollment-class-image img{
+  border-radius: 10px;
+}
+.class-enrollment-class-title p{
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  
+  background: #4776E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.class-enrollment-class-name p{
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.class-enrollment-class-explore-link a{
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  padding-top: 15px ;
+}
+
+/* Register Class */
+
+.register-class-section{
+  background-color: #fff597;
+  width: 100%;
+  height: 60%;
+}
+.register-class-div{
+  margin-left: 12%;
+  margin-right: 12%;
+  margin: 0px;
+  padding: 0px;
+  background: #02AAB0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #00CDAC, #02AAB0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #00CDAC, #02AAB0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.register-class-box{
+  position: relative;
+  top: -200px;
+  background-color: #ffffff;
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  z-index: 1;
+}
+.register-class-box-title p{
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 5%;
+  padding-left:5% ;
+  background: #4776E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.register-class-box-info p{
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.register-class-box-enroll{
+  padding: 5%;
+  padding-top: 7%;
+
+}
+.register-class-box-enroll button{
+  width: 300px;
+  height: 45px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  background: #4776E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #8E54E9, #4776E6);
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.register-class-box-enroll button:hover{
+  font-size: 21px;
+
+}
+.register-class-right-side{
+ margin: auto; 
+ padding: 5%;
+}
+.register-class-right-side img{
+  border-radius: 10px;
+ }
+
+
+ /* Video Page */
+ button {
+  border: none;
+  background: none;
+  font-family: "Lato", sans-serif;
+  color: #2c3e50;
+}
+
+.video-and-suggestions{
+  margin: 2%;
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.video-and-suggestion-box{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.video-box video{
+  border-radius: 5px;
+}
+
+.video-suggestions{
+  border: 1px solid white;
+  width: 100%;
+  padding: 5px;
+  height: 500px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  background-color: white;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+.video-suggestions::-webkit-scrollbar {
+  display: none;
+}
+.suggested-video{
+  /* border: 1px solid white; */
+  height: 120px;
+  margin-bottom: 9px;
+  margin-top: 5px;
+  display: flex;
+  grid-template-columns: 80% 80%;
+  padding-top: 3%;
+  
+}
+.suggested-video img{
+  height: 90%;
+  width: 70%;
+  cursor: pointer;
+}
+.suggested-video-title p{
+  font-size: 23px;
+  margin-left: -60px;
+}
+.display-video-title{
+  color: white;
+  font-size: 20px;
+}
+.display-video-views{
+  color: rgb(201, 201, 201);
+}
+
+.display-video-comments p{
+  color: white;
+  font-size: 25px;
+}
+
+
+
+/* COmment section */
+
+.comment_list > li {
+  margin-bottom: 4rem;
+}
+
+.comments_section {
+  width: 140rem;
+  margin: 2rem 2rem;
+  background-color: white;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  padding: 4rem;
+  transform-origin: top left;
+  transform: scale(0.7);
+}
+
+.no_comment_found {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.comment_card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+}
+
+.figure {
+  display: flex;
+  justify-content: start;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-grey-light-2);
+}
+
+.image {
+  width: 10rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.fig_caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0.5rem 0;
+}
+
+.name {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.occupation {
+  font-size: 1.8rem;
+  margin-bottom: auto;
+}
+
+.date {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.comment_text {
+  margin-left: 11rem;
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+  border-bottom: 1px solid var(--color-grey-light-2);
+}
+
+.comment_options {
+  margin-left: 11rem;
+  padding: 1rem 0;
+  display: flex;
+}
+
+.comment_options button {
+  display: block;
+  padding: 1rem;
+  font-size: 1.9rem;
+  color: #3498db;
+  cursor: pointer;
+}
+
+.comment_options button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.comment_options button:last-child {
+  margin-left: auto;
+}
+
+.comment_options button:hover {
+  background: #3498db1f;
+}
+
+.comment_edit {
+  margin-left: 11rem;
+}
+
+.comment_edit_message {
+  font-size: 1.3rem;
+  padding: 0.3rem 0;
+}
+
+textarea {
+  font-family: "Lato", sans-serif;
+  border: 1px solid  #2c3e50;
+  width: 100%;
+  color:  #2c3e50;
+  font-size: 2.5rem;
+  padding: 1.5rem;
+}
+
+.comment_edit_options {
+  display: flex;
+  padding: 1.4rem 0;
+  padding-bottom: 2rem;
+}
+
+.comment_edit_textarea {
+  padding-top: 2rem;
+}
+
+.comment_edit button {
+  display: block;
+  padding: 1rem;
+  font-size: 1.9rem;
+  color: #3498db;
+  cursor: pointer;
+}
+
+.comment_edit button:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.comment_edit button:hover {
+  background:  #3498db1f;
 }

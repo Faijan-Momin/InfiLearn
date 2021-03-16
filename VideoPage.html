@@ -1,0 +1,350 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | InfiLearn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Infilearn_logo_web.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="desktop-header">
+            <div class="desktop-header-logo">
+                <img src="images/Infilearn_logo.png" alt="InfiLearn-logo" width="120" height="50">
+            </div>
+            <div class="desktop-header-navbar">
+                <ul class="desktop-header-navbar-ul">
+                    <li>
+                        <div class="desktop-navbar-dropdown">
+                            <a>Classes <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="desktop-navbar-dropdown-content">
+                            <br><a href="">1<sup>st</sup> Class</a> <br> <br>
+                                <a href="">2<sup>nd</sup> Class</a> <br> <br>
+                                <a href="">3<sup>rd</sup> Class</a> <br> <br>
+                                <a href="">4<sup>th</sup> Class</a> <br> <br>
+                                <a href="">5<sup>th</sup> Class</a> <br> <br>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="desktop-navbar-dropdown">
+                            <a>Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="desktop-navbar-dropdown-content">
+                            <br><a href="">1<sup>st</sup> Grade</a> <br> <br>
+                                <a href="">2<sup>nd</sup> Grade</a> <br> <br>
+                                <a href="">3<sup>rd</sup> Grade</a> <br> <br>
+                                <a href="">4<sup>th</sup> Grade</a> <br> <br>
+                                <a href="">5<sup>th</sup> Grade</a> <br> <br>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="desktop-navbar-dropdown">
+                            <a>More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="desktop-navbar-dropdown-content">
+                            <br><a href="">About Us</a> <br> <br>
+                                <a href="">Services</a> <br> <br>
+                                <a href="">FAQ's</a> <br> <br>
+                                <a href="">Contact Us</a> <br> <br>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="desktop-header-signup">
+                <a id="signin-modal-btn"><i class="fa fa-user-circle" aria-hidden="true"></i> Sign in</a>
+            </div>
+        </div>
+        <div class="mobile-header">
+            <div class="mobile-header-navbar">
+                <!-- <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+                <div id="nav-icon1" onclick="MobileNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="mobile-header-navbar" class="mobile-header-navbar-overlay">
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <div class="mobile-header-navbar-overlay-content">
+                        <ul class="mobile-header-navbar-ul">
+                            <li><a href="#class" data-toggle="collapse">Class <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                                <div id="class" class="collapse">
+                                    <ul class="navbar-study-material-ul">
+                                        <li><a href="">1<sup>st</sup> Class</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">2<sup>nd</sup> Class</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">3<sup>rd</sup> Class</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">4<sup>th</sup> Class</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">5<sup>th</sup> Class</a></li>  <hr class="hr-rounded-collapsible">
+                                    </ul>
+                                </div> <hr class="hr-rounded">
+                            <li><a href="#study-material" data-toggle="collapse">Study Material <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                                <div id="study-material" class="collapse">
+                                    <ul class="navbar-study-material-ul">
+                                        <li><a href="">1<sup>st</sup> Grade</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">2<sup>nd</sup> Grade</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">3<sup>rd</sup> Grade</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">4<sup>th</sup> Grade</a></li>  <hr class="hr-rounded-collapsible">
+                                        <li><a href="">5<sup>th</sup> Grade</a></li>  <hr class="hr-rounded-collapsible">
+                                    </ul>
+                                </div> <hr class="hr-rounded">
+                            <li><a href="#more" data-toggle="collapse">More <i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                            <div id="more" class="collapse">
+                                <ul class="navbar-more-ul">
+                                    <li><a href="">About Us</a></li>  <hr class="hr-rounded-collapsible">
+                                    <li><a href="">Services</a></li>  <hr class="hr-rounded-collapsible">
+                                    <li><a href="">FAQ's</a></li>  <hr class="hr-rounded-collapsible">
+                                    <li><a href="">Contact Us</a></li>  <hr class="hr-rounded-collapsible">
+                                </ul>
+                            </div> <hr class="hr-rounded">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-header-logo">
+                <img src="images/Infilearn_logo.png" alt="InfiLearn-logo" width="130" height="50">
+            </div>
+            <div class="mobile-header-signup">
+                <a href=""><i class="fa fa-user-circle" aria-hidden="true"></i> Sign in</a>
+            </div>
+        </div>
+    
+        <div class="signin-modal">
+            
+            <!-- The Modal -->
+            <div id="signin-modal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Sign in here</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="signin-modal-user-inputs">
+                        <label for="user-email">Enter Email:</label> <br>
+                            <input type="email" name="user-email" id="user-email" placeholder="johnmark@example.com"><br>
+                        <label for="user-password">Enter Password:</label> <br>
+                            <input type="password" name="user-password" id="user-password"><br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="signin-modal-user-submit">
+                        <button class="signup-modal-user-signup-button">Sign up</button>
+                    </div>
+                    <br><p>New User? <a id="signup-modal-btn">Sign-up Now</a></p>
+                </div>
+                </div>
+            
+            </div>
+
+
+            <!-- Signup Modal -->
+
+            <!-- The Modal -->
+            <div id="signup-modal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Sign up here</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="signin-modal-user-inputs">
+                        <label for="user-name">Enter Name:</label> <br>
+                            <input type="text" name="user-name" id="user-name" placeholder="eg: John Mark"><br>
+                        <label for="user-email">Enter Email:</label> <br>
+                            <input type="email" name="user-email" id="user-email" placeholder="johnmark@example.com"><br>
+                        <label for="user-password">Enter Password:</label> <br>
+                            <input type="password" name="user-password" id="user-password"><br>
+                        <label for="user-confirm-password">Confirm Password:</label> <br>
+                            <input type="password" name="user-confirm-password" id="user-confirm-password"><br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="signin-modal-user-submit">
+                        <button class="signup-modal-user-signup-button">Sign up</button>
+                    </div>
+                    <br><p>Existing User? <a id="signin-modal-btn-modal">Sign-in Now</a></p>
+                </div>
+                </div>
+            
+            </div>
+
+            
+        </div>
+
+
+    </header>
+    
+    <section class="video-and-suggestions">
+        <div class="video-and-suggestion-div">
+            <div class="video-and-suggestion-box">
+                <div class="video-box">
+                    <video src="videos/TheWorld.mp4" controls controlsList="nodownload"></video>
+                </div>
+                <div class="video-suggestions">
+                    <div class="suggested-video">
+                        <div class="suggested video-thumbnail">
+                            <img src="images/thumbnail.png" alt="logo">
+                        </div>
+                        <div class="suggested-video-title">
+                            <p>Title:a simple video</p>
+                        </div>
+                    </div>
+
+                    <div class="suggested-video">
+                        <div class="suggested video-thumbnail">
+                            <img src="images/thumbnail.png" alt="logo">
+                        </div>
+                        <div class="suggested-video-title">
+                            <p>Title:a simple video</p>
+                        </div>
+                    </div>
+
+                    <div class="suggested-video">
+                        <div class="suggested video-thumbnail">
+                            <img src="images/thumbnail.png" alt="logo">
+                        </div>
+                        <div class="suggested-video-title">
+                            <p>Title:a simple video</p>
+                        </div>
+                    </div>
+
+                    <div class="suggested-video">
+                        <div class="suggested video-thumbnail">
+                            <img src="images/thumbnail.png" alt="logo">
+                        </div>
+                        <div class="suggested-video-title">
+                            <p>Title:a simple video</p>
+                        </div>
+                    </div>
+
+                    <div class="suggested-video">
+                        <div class="suggested video-thumbnail">
+                            <img src="images/thumbnail.png" alt="logo">
+                        </div>
+                        <div class="suggested-video-title">
+                            <p>Title:a simple video</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+            <p class="display-video-title">Video Title Here: A Simple Video</p>
+            <p class="display-video-views">1,000 views  •  22 Feb 2021</p>
+            <div class="display-video-comments">
+                <br><p>Comments</p>
+            </div>
+        </div>
+    </section>
+ <section class="comments_section" style="margin-left: 5%;">
+      <ul class="comment_list">
+            <li>
+                <div class="comment_card" data-depth="0">
+                    <figure class="figure">
+                        <img class="image" src="https://newsfeedtemplate.netlify.com/img/user01.jpg" alt="Naveen Pantra"/>
+                        <figcaption class="fig_caption">
+                            <h5 class="name">Naveen Pantra</h5>
+                            <h6 class="occupation">Student</h6>
+                            <p class="date">22nd March, 2020</p>
+                        </figcaption>
+                    </figure>
+                    <article class="comment_text">
+                        Hello this is a test comment.
+                    </article>
+                    <div class="comment_options">
+                        <button>Edit</button>
+                        <button>Comment</button>
+                        <button>Show Comments</button>  
+                    </div>
+                    <div class="comment_edit">
+                       <textarea name="comment_edit" id="comment_edit" class="comment_edit_textarea" cols="0" rows="0"></textarea>
+                       <p class="comment_message">Please enter more than one character to accept comment.</p>
+                        <div class="comment_edit_options">
+                            <button data-action="submit">Submit</button>
+                            <button data-action="cancle">Cancle</button>
+                        </div> 
+                    </div>
+                    <div class="comments">
+                        <p class="no_comment_found">No Comments Found :(</p>     
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="comment_card" data-depth="0">
+                    <figure class="figure">
+                        <img class="image" src="https://newsfeedtemplate.netlify.com/img/user02.jpg" alt="Naveen Pantra"/>
+                        <figcaption class="fig_caption">
+                            <h5 class="name">Navneet Pantra</h5>
+                            <h6 class="occupation">Student</h6>
+                            <p class="date">28th March, 2020</p>
+                        </figcaption>
+                    </figure>
+                    <article class="comment_text">
+                        Hello this is a test comment.
+                    </article>
+                    <div class="comment_options">
+                        <button>Edit</button>
+                        <button>Comment</button>
+                        <button>Show Comments</button>  
+                    </div>
+                    <div class="comment_edit">
+                       <textarea name="comment_edit" id="comment_edit" class="comment_edit_textarea" cols="0" rows="0"></textarea>
+                       <p class="comment_message">Please enter more than one character to accept comment.</p>
+                        <div class="comment_edit_options">
+                            <button data-action="submit">Submit</button>
+                            <button data-action="cancle">Cancle</button>
+                        </div> 
+                    </div>
+                    <div class="comments">
+                        <p class="no_comment_found">No Comments Found :(</p>     
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+        
+            <div class="row">
+                INFI-LEARN Copyright © 2021 Infi-Learn - All rights reserved 
+            </div>
+        </div>
+    </footer>
+        
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav-icon1').click(function(){
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+</body>
+</html>
